@@ -1,0 +1,31 @@
+.latest_insight_container{
+    padding: 13vh 7vw;
+    width: 100vw;
+}
+
+.latest_insight_container h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.latest_insight_container p{
+    margin: 1rem 0;
+}
+
+.view_sight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:720px){
+
+    .latest_insight_container h1{
+        font-size: 26px;
+    }
+
+    .latest_insight_container p{
+        font-size: 15px;
+        width: 60%;
+    }
+}

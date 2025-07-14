@@ -1,0 +1,145 @@
+.service_container{
+    padding: 13vh 7vw;
+}
+
+.service_container h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.service_container p{
+    margin: 1rem 0;
+    font-size: 20px;
+}
+
+.services{
+    display: flex;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.service{
+    list-style-type: none;
+    background-color: #eaecef;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    /* width: 300px; */
+}
+
+.service li{
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.service li:hover{
+    background-color: #524789;
+    color: #eaecef;
+}
+
+.active{
+    background-color: #524789;
+    color: #eaecef;
+}
+
+
+.service_info{
+    position: relative;
+}
+
+.service_card{
+    background-color: #eaecef;
+    padding: 1.5rem;
+    position: absolute;
+    right:-1000px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.service_card img{
+    margin-top: 1rem;
+    max-width: 720px;
+    height: 300px;
+}
+
+.show_card{
+    right: -800px;
+    opacity: 1;
+}
+
+.dropdown{
+    display: none;
+    background-color: #eaecef;
+    padding: 1.5rem;
+    transition: 0.3s;
+}
+
+@media (max-width:1250px){
+
+    .show_card{
+        right: 150px;
+        opacity: 1;
+    }
+
+    .service{
+        flex-direction: row;
+    }
+
+    .services{
+        flex-direction: column;
+    }
+
+    .service_card h2{
+        font-size: 20px;
+    }
+
+    .service_card p{
+        font-size: 16px;
+    }
+
+    .service li{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1100px){
+    .show_card{
+        right: 10px;
+        opacity: 1;
+    }
+}
+
+@media (max-width:900px){
+    .service{
+        flex-direction: column;
+    }
+
+    .service_card{
+        opacity: 0;
+    }
+
+    .show_card{
+        display: none;
+    }
+
+    .showDropdown{
+        display: block;
+    }
+
+    .dropdown img{
+        max-height: 200px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:720px){
+    .dropdown img{
+        height: 150px;
+        width: 100%;
+    }
+
+    .service_container h1{
+        font-size: 36px;
+    }
+}

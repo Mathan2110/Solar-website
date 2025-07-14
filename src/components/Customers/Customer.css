@@ -1,0 +1,125 @@
+.customer_container{
+    padding: 13vh 7vw;
+    width: 100vw;
+    background-color: #eaecef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customer_container h1{
+    font-size: 40px;
+    font-weight: 300;
+    width: 65%;
+    text-align: center;
+}
+
+.customer_container p{
+    margin: 1.5rem 0;
+    width: 70%;
+    text-align: center;
+}
+
+.rating_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile_pics{
+    display: flex;
+}
+
+.profile_pics img{
+    height: 50px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: -15px;
+}
+
+.profile_pics div{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rating{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.rating_container p{
+    width: 200px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.review_container{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.review_card{
+    background-color: #312F32;
+    padding: 1rem;
+}
+
+.review_card img{
+    height: 40px;
+}
+
+.review_card p{
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+    color: #eaecef;
+}
+
+.pic_rating{
+    display: flex;
+    gap: 15px;
+}
+
+.pic_rating img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name{
+    height: 50px;
+    margin-top: 5px;
+}
+
+.name_{
+    color:#eaecef;
+}
+
+.name img{
+    height: 10px;
+}
+
+@media (max-width:720px){
+    .review_container{
+        flex-direction: column;
+    }
+
+    .customer_container h1{
+        width: 80%; 
+        font-size: 28px;
+    }
+
+    .customer_container p{
+        width: 90%;
+        font-size: 15px;
+    }
+}

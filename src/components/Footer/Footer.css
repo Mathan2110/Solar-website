@@ -1,0 +1,128 @@
+.footer_container{
+    padding: 13vh 7vw;
+    padding-bottom: 5vh;
+}
+
+.footer_up{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 3rem;
+    margin-bottom:3rem;
+}
+
+.link_icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.logo_links{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.logo{
+    width: 120px;
+}
+
+.link_icons img{
+    height: 30px;
+}
+
+.footer_container h2{
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+    border-bottom: 3px solid gray;
+    padding: 0.6rem 0;
+}
+
+.footer_container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_container ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.icon_greaterthan{
+    height: 13px;
+}
+
+.contact_icons img{
+    height: 20px;
+    cursor: default;
+    margin-right: 10px;
+}
+
+.footer_subscribenow input{
+    padding: 0.8rem 0.6rem;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    color: #eaecef;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer_subscribenow input::placeholder{
+    color:#010100;
+}
+
+.footer_subscribenow button{
+    padding: 0.8rem 0.6rem;
+    width:100%;
+    background-color: rgb(210, 210, 210);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.footer_subscribenow button:hover{
+    background-color: rgba(255, 0, 0, 0.705);
+    color: #eaecef;
+}
+
+.footer_down{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 3px solid gray;
+}
+
+.footer_down p{
+    font-size: 18px;
+}
+
+.privacy_policy{
+    cursor: pointer;
+}
+
+/* Media queries */
+@media (max-width:1100px){
+    .footer_up{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer_down p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:600px){
+    .footer_up{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .privacy_policy{
+        width: 50%;
+        text-align: right;
+    }
+}
