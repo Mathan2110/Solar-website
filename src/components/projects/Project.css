@@ -57,7 +57,6 @@
 
 @media (max-width:1250px){
     .project_container{
-        margin-top: 60vh;
         width: 100vw;
     }
 
@@ -86,6 +85,9 @@
     .project_container{
         margin-top:0 ;
     }
+    .service_info{
+        display: none;
+    }
 }
 
 @media (max-width:750px){
@@ -104,5 +106,14 @@
 
     .project{
         flex-direction: column;
+    }
+
+    
+}
+
+@media (max-width:500px){
+    .project img{
+        max-height: 150px;
+        border-radius: 10px;
     }
 }
