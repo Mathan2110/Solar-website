@@ -29,3 +29,18 @@
         width: 60%;
     }
 }
+
+@media (max-width:500px){
+    .project img{
+        max-height: 200px;
+        border-radius: 10px;
+    }
+
+    .project_container p{
+        width: 100%;
+    }
+
+    .project_info p{
+        width: 100%;
+    }
+}

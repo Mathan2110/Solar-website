@@ -113,7 +113,11 @@
 
 @media (max-width:500px){
     .project img{
-        max-height: 150px;
+        max-height: 200px;
         border-radius: 10px;
+    }
+
+    .project_container p{
+        width: 100%;
     }
 }
